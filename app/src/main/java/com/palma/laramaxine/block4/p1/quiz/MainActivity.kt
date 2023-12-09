@@ -21,8 +21,16 @@ class MainActivity : AppCompatActivity() {
         paymentPurpose = findViewById(R.id.purposeInput)
         addButton = findViewById(R.id.addButton)
 
+        val sName = studentName.text.toString()
+        val aPaid = amountPaid.text.toString()
+        val pPurpose = paymentPurpose.text.toString()
+
         addButton.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
+            intent.putExtra("sN", sName)
+            intent.putExtra("aP", aPaid)
+            intent.putExtra("pP", pPurpose)
+
             startActivity(intent)
 
         }

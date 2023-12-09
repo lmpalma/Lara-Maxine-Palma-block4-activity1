@@ -35,15 +35,15 @@
         android:id="@+id/nameInput"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:textAlignment="center"
         android:hint="name of student"
-        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/paymentText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/paymentText"
-        android:inputType="text"
-        tools:ignore="HardcodedText"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <TextView
         android:id="@+id/paymentText"
@@ -60,15 +60,15 @@
         android:id="@+id/paymentInput"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:textAlignment="center"
         android:hint="amount paid"
-        app:layout_constraintTop_toBottomOf="@+id/paymentText"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/purposeText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/purposeText"
-        android:inputType="number"
-        tools:ignore="HardcodedText"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/paymentText"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <TextView
         android:id="@+id/purposeText"
@@ -85,16 +85,16 @@
         android:id="@+id/purposeInput"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:textAlignment="center"
-        android:hint="reason of payment"
         android:layout_marginTop="14dp"
-        app:layout_constraintTop_toBottomOf="@+id/purposeText"
+        android:hint="reason of payment"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/addButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/addButton"
-        android:inputType="text"
-        tools:ignore="HardcodedText"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/purposeText"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <Button
         android:id="@+id/addButton"
